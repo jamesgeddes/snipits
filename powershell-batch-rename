@@ -1,1 +1,1 @@
-Get-ChildItem | Rename-Item -NewName {$_.LastWriteTime.ToString("yyyy-MM-ddThh.mm.ss ddd") + ($_.Extension)}
+Get-ChildItem | Rename-Item -NewName {$_.LastWriteTime.ToString("yyyy-MM-ddTHH.mm.ss ddd") + ($_.Extension)}
